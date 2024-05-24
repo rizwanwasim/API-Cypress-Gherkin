@@ -1,0 +1,116 @@
+{
+  "createUser": {
+    "endpoint": "/users",
+    "method": "POST",
+    "body": {
+      "name": "rizwan",
+      "job": "qa"
+    }
+  },
+  "deleteUser": {
+    "endpoint": "/users/1",
+    "method": "DELETE"
+  },
+  "getResource": {
+    "endpoint": "/unknown/1",
+    "method": "GET"
+  },
+  "getResourceNonExisting": {
+    "endpoint": "/unknown/999",
+    "method": "GET"
+  },
+  "getUser": {
+    "endpoint": "/users/1",
+    "method": "GET"
+  },
+  "getUserNonExisting": {
+    "endpoint": "/users/23",
+    "method": "GET"
+  },
+  "listUser": {
+    "endpoint": "/users",
+    "method": "GET"
+  },
+  "listUserWithLimit": {
+    "endpoint": "/users?per_page=2",
+    "method": "GET"
+  },
+  "listUserWithPage": {
+    "endpoint": "/users?page=3",
+    "method": "GET"
+  },
+  "listUserWithPageAndLimit": {
+    "endpoint": "/users?page=3&per_page=2",
+    "method": "GET"
+  },
+  "listUserWithDelay": {
+    "endpoint": "/users?delay=7",
+    "method": "GET"
+  },
+  "listResource": {
+    "endpoint": "/unknown",
+    "method": "GET"
+  },
+  "listResourceWithLimit": {
+    "endpoint": "/unknown?per_page=3",
+    "method": "GET"
+  },
+  "listResourceWithPage": {
+    "endpoint": "/unknown?page=2",
+    "method": "GET"
+  },
+  "listResourceWithPageAndLimit": {
+    "endpoint": "/unknown?page=2&per_page=3",
+    "method": "GET"
+  },
+  "listResourceWithDelay": {
+    "endpoint": "/unknown?delay=10",
+    "method": "GET"
+  },
+  "login": {
+    "endpoint": "/login",
+    "method": "POST",
+    "body": {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka"
+    }
+  },
+  "loginWithNoPassword": {
+    "endpoint": "/login",
+    "method": "POST",
+    "body": {
+      "email": "eve.holt@reqres.in"
+    }
+  },
+  "loginWithInvalidEmail": {
+    "endpoint": "/login",
+    "method": "POST",
+    "body": {
+      "email": "eve.holt",
+      "password": "WrongPass"
+    }
+  },
+  "register": {
+    "endpoint": "/register",
+    "method": "POST",
+    "body": {
+      "email": "eve.holt@reqres.in",
+      "password": "pistol"
+    }
+  },
+  "registerWithoutPassword": {
+    "endpoint": "/register",
+    "method": "POST",
+    "body": {
+      "email": "eve.holt@reqres.in"
+    }
+  },
+  "updateUser": {
+    "endpoint": "/users/2",
+    "method": "PUT",
+    "body": {
+      "name": "rizwan",
+      "job": "qa automation"
+    }
+  }
+}
